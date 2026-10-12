@@ -1,0 +1,11 @@
+Tryvoha Local Android project (v1.0.0, build-script fix 2026-10-12)
+
+Deliverable: Android SOURCE PROJECT only; not a compiled APK.
+
+Fixed: fresh ./build-apk.sh no longer copies gradle-wrapper.jar from checkout-guard.
+Instead ./gradlew bootstraps a checksum-verified official Gradle 9.3.1 wrapper JAR
+and Gradle 9.3.1 binary distribution. First build needs internet + JDK 17+ + Android SDK 37.
+
+Local tests: 17/17 pure-Java logic tests passed.
+Bash scripts: syntax checked.
+No Android APK build or on-device test done in this environment (Android SDK absent).
